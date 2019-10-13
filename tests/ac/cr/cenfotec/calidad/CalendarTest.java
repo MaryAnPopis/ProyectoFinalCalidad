@@ -64,15 +64,7 @@ class CalendarTest {
         }
     }
 
-    void getInvalidDateFromTuple() {
-        try{
-            int[] dateArray = Calendar.getDateFromTuple("(1000,5,33)");
-            fail();
-        } catch (Exception e) {
-            assertTrue(true);
-        }
-    }
-
+    @Test
     void getInvalidFormatFromTuple() {
         try{
             int[] dateArray = Calendar.getDateFromTuple("2019,5,6");

@@ -35,10 +35,10 @@ public class Main {
                         throw new Exception();
                 }
 
-            } catch(Exception e) {
+            } catch (Exception e) {
                 System.out.println("Por favor seleccione una opción correcta");
             }
-         } while(!isExitMenu);
+        } while (!isExitMenu);
     }
 
     static void checkLeapYear(BufferedReader br) {
@@ -60,8 +60,9 @@ public class Main {
             int[] date = Calendar.getDateFromTuple(dateInput);
             if (!Calendar.isValidDate(date[1], date[2], date[0])) throw new Exception();
 
+            int[] nextDay = Calendar.nextDay(date[1], date[2], date[0]);
 
-            // Ingresar código para siguiente día
+            System.out.println("El siguiente dia es: " + nextDay[2] +", " + nextDay[0] + ", " + nextDay[1] + ".");
 
         } catch (Exception e) {
             System.out.println("La fecha ingresada no es valida");
