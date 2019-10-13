@@ -55,12 +55,30 @@ class CalendarTest {
     }
 
     @Test
-    void nextDay() {
-        int[] nextDay = new int[] {1, 2, 2019};
-        int[] nextMonth = new int[] {2, 1, 2019};
-        int[] nextYear = new int[] {1, 1, 2020};
-        assertArrayEquals(nextDay, Calendar.nextDay(1,1, 2019));
-        assertArrayEquals(nextMonth, Calendar.nextDay(1,31, 2019));
-        assertArrayEquals(nextYear, Calendar.nextDay(12,31, 2019));
+    void getDateFromTuple() {
+        try{
+            int[] dateArray = Calendar.getDateFromTuple("(2019,5,6)");
+            assertTrue(dateArray.length == 3);
+        } catch (Exception e) {
+            fail();
+        }
+    }
+
+    void getInvalidDateFromTuple() {
+        try{
+            int[] dateArray = Calendar.getDateFromTuple("(1000,5,33)");
+            fail();
+        } catch (Exception e) {
+            assertTrue(true);
+        }
+    }
+
+    void getInvalidFormatFromTuple() {
+        try{
+            int[] dateArray = Calendar.getDateFromTuple("2019,5,6");
+            fail();
+        } catch (Exception e) {
+            assertTrue(true);
+        }
     }
 }

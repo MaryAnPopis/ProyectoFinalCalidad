@@ -58,4 +58,18 @@ public class Calendar {
     private static boolean isLastDayOfMonth(int month, int day, int year) {
         return MonthDays.values()[month - 1].getDays() + daysInMonth(month, year) == dayOfYear(month, day);
     }
+
+    static int[] getDateFromTuple(String dateTuple) throws Exception {
+        dateTuple = dateTuple.trim();
+        if (dateTuple.charAt(0) == '(' && dateTuple.charAt(dateTuple.length() -1) == ')') {
+            dateTuple = dateTuple.substring(1, dateTuple.length() -1);
+
+            String[] separatedDate = dateTuple.split(",");
+
+            if (separatedDate.length == 3) {
+                return new int[] {Integer.parseInt(separatedDate[0]), Integer.parseInt(separatedDate[1]), Integer.parseInt(separatedDate[2])};
+            }
+        }
+        throw new Exception();
+    }
 }
