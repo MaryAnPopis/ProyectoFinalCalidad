@@ -53,4 +53,14 @@ class CalendarTest {
         boolean isValidDate = Calendar.isValidDate(1, 29, 2005);
         assertTrue(isValidDate);
     }
+
+    @Test
+    void nextDay() {
+        int[] nextDay = new int[] {1, 2, 2019};
+        int[] nextMonth = new int[] {2, 1, 2019};
+        int[] nextYear = new int[] {1, 1, 2020};
+        assertArrayEquals(nextDay, Calendar.nextDay(1,1, 2019));
+        assertArrayEquals(nextMonth, Calendar.nextDay(1,31, 2019));
+        assertArrayEquals(nextYear, Calendar.nextDay(12,31, 2019));
+    }
 }

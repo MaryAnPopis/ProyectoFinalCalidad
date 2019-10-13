@@ -46,4 +46,16 @@ public class Calendar {
     public static boolean isValidDate(int month, int day, int year) {
         return month >= 1 && month <= 12 && day > 0 && day <= daysInMonth(month, year) && year >= 1582;
     }
+
+    public static int[] nextDay(int month, int day, int year) {
+        if (isLastDayOfMonth(month, day, year)) {
+            return month == 12 ? new int[] {1, 1, year += 1} : new int[] {month += 1, 1, year};
+        } else {
+            return new int[] {month, day += 1 , year};
+        }
+    }
+
+    private static boolean isLastDayOfMonth(int month, int day, int year) {
+        return MonthDays.values()[month - 1].getDays() + daysInMonth(month, year) == dayOfYear(month, day);
+    }
 }
