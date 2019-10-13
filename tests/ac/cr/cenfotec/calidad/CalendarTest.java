@@ -8,7 +8,16 @@ class CalendarTest {
 
     @Test
     void getDayOfWeek() {
+        int dayOfTheWeek = Calendar.getDayOfWeek(2019,10,12);
+        assertEquals(6, dayOfTheWeek);
     }
+
+    @Test
+    void getDayOfWeekInLeapYear() {
+        int dayOfTheWeek = Calendar.getDayOfWeek(2020,2,29);
+        assertEquals(6, dayOfTheWeek);
+    }
+
 
     @Test
     void dayOfYear() {
