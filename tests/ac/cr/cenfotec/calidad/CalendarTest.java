@@ -37,11 +37,6 @@ class CalendarTest {
         assertFalse(isLeapYear);
     }
 
-
-    @Test
-    void daysInMonth() {
-    }
-
     @Test
     void isNotValidDate() {
         boolean isNotValid = Calendar.isValidDate(15, 29, 2020);
