@@ -14,10 +14,10 @@ public class Calendar {
     }
 
 
-    public static int dayOfYear(int month, int dayOfMonth) {
+    public static int dayOfYear(int month, int day) {
         MonthDays[] monthDay = MonthDays.values();
-        dayOfMonth  += monthDay[month-1].getDays();
-        return dayOfMonth;
+        day  += monthDay[month-1].getDays();
+        return day;
     }
 
     public static boolean isLeapYear(int year) {
@@ -43,7 +43,7 @@ public class Calendar {
         }
     }
 
-    public static boolean isValidDate(int month, int dayOfMonth, int year) {
-        return month >= 1 && month <= 12 && dayOfMonth > 0 && dayOfMonth <= daysInMonth(month, year) && year >= 1582;
+    public static boolean isValidDate(int month, int day, int year) {
+        return month >= 1 && month <= 12 && day > 0 && day <= daysInMonth(month, year) && year >= 1582;
     }
 }
