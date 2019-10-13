@@ -9,6 +9,11 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+        System.out.println("Enter a date in the format (day,month,year)");
+        String date = br.readLine();
+        validateFormta(date);
+        br.readLine();
+/*
         int month, day, year;
 
         do {
@@ -33,7 +38,21 @@ public class Main {
 
         boolean isLeap = isLeapYear(year);
         System.out.println(isLeap ? "The year is leap" : "The year is not leap");
+*/
+    }
 
+    static int[] validateFormta(String userInput) throws Exception {
+            userInput = userInput.trim();
+            if (userInput.charAt(0) == '(' && userInput.charAt(userInput.length() -1) == ')') {
+                userInput = userInput.substring(1, userInput.length() -1);
+
+                String[] separatedDate = userInput.split(",");
+
+                if (separatedDate.length == 2) {
+                    return new int[] {Integer.parseInt(separatedDate[0]), Integer.parseInt(separatedDate[1]), Integer.parseInt(separatedDate[2])};
+                }
+            }
+        throw new Exception();
     }
 
 
