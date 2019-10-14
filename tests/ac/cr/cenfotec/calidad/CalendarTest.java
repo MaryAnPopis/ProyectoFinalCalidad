@@ -8,13 +8,13 @@ class CalendarTest {
 
     @Test
     void getDayOfWeek() {
-        int dayOfTheWeek = Calendar.getDayOfWeek(2019,10,12);
+        int dayOfTheWeek = Calendar.getDayOfWeek(2019, 10, 12);
         assertEquals(6, dayOfTheWeek);
     }
 
     @Test
     void getDayOfWeekInLeapYear() {
-        int dayOfTheWeek = Calendar.getDayOfWeek(2020,2,29);
+        int dayOfTheWeek = Calendar.getDayOfWeek(2020, 2, 29);
         assertEquals(6, dayOfTheWeek);
     }
 
@@ -56,7 +56,7 @@ class CalendarTest {
 
     @Test
     void getDateFromTuple() {
-        try{
+        try {
             int[] dateArray = Calendar.getDateFromTuple("(2019,5,6)");
             assertTrue(dateArray.length == 3);
         } catch (Exception e) {
@@ -66,11 +66,18 @@ class CalendarTest {
 
     @Test
     void getInvalidFormatFromTuple() {
-        try{
+        try {
             int[] dateArray = Calendar.getDateFromTuple("2019,5,6");
             fail();
         } catch (Exception e) {
             assertTrue(true);
         }
+    }
+
+    @Test
+    void nextDate() {
+        assertArrayEquals(new int[]{1, 2, 2019}, Calendar.nextDay(1, 1, 2019));
+        assertArrayEquals(new int[]{2, 1, 2019}, Calendar.nextDay(1, 31, 2019));
+        assertArrayEquals(new int[]{1, 1, 2020}, Calendar.nextDay(12, 31, 2019));
     }
 }
