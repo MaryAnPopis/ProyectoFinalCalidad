@@ -1,72 +1,106 @@
 package ac.cr.cenfotec.calidad;
 
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
+import static ac.cr.cenfotec.calidad.Calendar.*;
+
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-        int month, day, year;
-
+        boolean isExitMenu = false;
         do {
-            System.out.println("Enter month as number");
-            month =  Integer.parseInt(br.readLine());
+            try {
+                System.out.println("Ingrese una opción:\n1. Revisar año bisiesto\n2. Buscar día siguiente\n3. Buscar día de la semana\n4. Salir");
+                int userOption = Integer.parseInt(br.readLine());
 
-            System.out.println("Enter day as number");
-            day =  Integer.parseInt(br.readLine());
+                switch (userOption) {
+                    case 1:
+                        checkLeapYear(br);
+                        break;
+                    case 2:
+                        getNextDay(br);
+                        break;
+                    case 3:
+                        getWeekDay(br);
+                        break;
+                    case 4:
+                        isExitMenu = true;
+                        break;
+                    default:
+                        throw new Exception();
+                }
 
-            System.out.println("Enter year as number");
-            year =  Integer.parseInt(br.readLine());
-
-            if(!isValidDate(month, day, year)) {
-                System.out.println("Invalid Date, please enter a new one");
+            } catch (Exception e) {
+                System.out.println("Por favor seleccione una opción correcta");
             }
-
-        }while(!isValidDate(month, day, year));
-
-
-        int dayOfYearResult = dayOfYear(month, day);
-        System.out.println("The day is " + dayOfYearResult);
-
-        boolean isLeap = isLeapYear(year);
-        System.out.println(isLeap ? "The year is leap" : "The year is not leap");
-
+        } while (!isExitMenu);
     }
 
-
-    static int dayOfYear(int month, int dayOfMonth) {
-        MonthDays[] monthDay = MonthDays.values();
-        dayOfMonth  += monthDay[month-1].getDays();
-        return dayOfMonth;
-    }
-
-    static boolean isLeapYear(int year) {
-        if (year % 4 != 0) {
-            return false;
-        } else if (year % 400 == 0) {
-            return true;
-        } else if (year % 100 == 0) {
-            return false;
-        } else {
-            return true;
+    static void checkLeapYear(BufferedReader br) {
+        try {
+            System.out.println("Ingrese un año que desea revisar (Debe ser mayor a 1582)");
+            int yearInput = Integer.parseInt(br.readLine());
+            if (yearInput < 1582) throw new Exception();
+            if (Calendar.isLeapYear(yearInput)) System.out.println("Es bisiesto");
+            else System.out.println("No es bisiesto");
+        } catch (Exception e) {
+            System.out.println("El año ingresado no es valido");
         }
     }
 
-    static int daysInMonth(int month, int year) {
-        switch (month) {
-            case 2 :
-                return isLeapYear(year) ? 29 : 28;
-            case 4 : case 6 : case 9 : case 11:
-                return 30;
-            default :
-                return 31;
+    static void getNextDay(BufferedReader br) {
+        try {
+            System.out.println("Ingrese una fecha inicial en formato \"(año,mes,día)\"(El año debe ser mayor a 1582)");
+            String dateInput = br.readLine();
+            int[] date = Calendar.getDateFromTuple(dateInput);
+            if (!Calendar.isValidDate(date[1], date[2], date[0])) throw new Exception();
+
+            int[] nextDay = Calendar.nextDay(date[1], date[2], date[0]);
+
+            System.out.println("El siguiente dia es: " + nextDay[2] +", " + nextDay[0] + ", " + nextDay[1] + ".");
+
+        } catch (Exception e) {
+            System.out.println("La fecha ingresada no es valida");
         }
     }
 
-    static boolean isValidDate(int month, int dayOfMonth, int year) {
-        return month >= 1 && month <= 12 && dayOfMonth > 0 && dayOfMonth <= daysInMonth(month, year) && year >= 1582;
+    static void getWeekDay(BufferedReader br) {
+        try {
+            System.out.println("Ingrese una fecha en formato \"(año,mes,día)\"(El año debe ser mayor a 1582)");
+            String dateInput = br.readLine();
+            int[] date = Calendar.getDateFromTuple(dateInput);
+            if (!Calendar.isValidDate(date[1], date[2], date[0])) throw new Exception();
+            int dayOfTheWeek = getDayOfWeek(date[0], date[1], date[2]);
+            System.out.println("Día de la semana: " + parseDayOfWeek(dayOfTheWeek));
+        } catch (Exception e) {
+            System.out.println("La fecha ingresada no es valida");
+        }
     }
+
+    static String parseDayOfWeek(int dayOfTheWeek) {
+        switch (dayOfTheWeek){
+            case 0:
+                return "0 - Domingo";
+            case 1:
+                return "1 - Lunes";
+            case 2:
+                return "2 - Martes";
+            case 3:
+                return "3 - Miércoles";
+            case 4:
+                return "4 - Jueves";
+            case 5:
+                return "5 - Viernes";
+            case 6:
+                return "6 - Sábado";
+            default:
+                return "";
+        }
+    }
+
 }
