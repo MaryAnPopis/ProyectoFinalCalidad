@@ -8,11 +8,11 @@ enum MonthDays {
     MAY(120, 31),
     JUNE(151, 30),
     JULY(181, 31),
-    AUGUST(212, 30),
-    SEPTEMBER(243, 31),
-    OCTOBER(273,30),
-    NOVEMBER(304,31),
-    DECEMBER(335, 30);
+    AUGUST(212, 31),
+    SEPTEMBER(243, 30),
+    OCTOBER(273,31),
+    NOVEMBER(304,30),
+    DECEMBER(335, 31);
 
     private int daysAccumulation;
     private int monthDays;
