@@ -18,10 +18,10 @@ public class Calendar {
 
         MonthDays[] monthDay = MonthDays.values();
 
-        if ((isLeapYear(year) && month >= 2 ? monthDay[month-1].getMonthDays() + 1 : monthDay[month-1].getMonthDays()) < day
-                || day <= 0
+        if (day <= 0
                 || (month <= 0 || month > 12)
-                || (year < 1582 || year >= 2900)) {
+                || (year < 1582 || year >= 2900)
+                || (isLeapYear(year) && month >= 2 ? monthDay[month-1].getMonthDays() + 1 : monthDay[month-1].getMonthDays()) < day) {
             return 0;
         }
         day  += monthDay[month-1].getDays();

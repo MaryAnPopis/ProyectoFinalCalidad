@@ -83,6 +83,7 @@ class CalendarTest {
         assertArrayEquals(new int[]{1, 2, 2019}, Calendar.nextDay(1, 1, 2019));
         assertArrayEquals(new int[]{2, 1, 2019}, Calendar.nextDay(1, 31, 2019));
         assertArrayEquals(new int[]{1, 1, 2020}, Calendar.nextDay(12, 31, 2019));
-        assertArrayEquals(new int[]{2, 29, 2019}, Calendar.nextDay(2, 28, 2019));
+        assertArrayEquals(new int[]{3, 1, 2019}, Calendar.nextDay(2, 28, 2019));
+        assertArrayEquals(new int[]{2, 29, 2020}, Calendar.nextDay(2, 28, 2020));
     }
 }
