@@ -34,10 +34,11 @@ class CalendarTest {
 
     @Test
     void isLeapYear() {
-        boolean isLeapYear = Calendar.isLeapYear(2020);
-        assertTrue(isLeapYear);
-        assertTrue(!Calendar.isLeapYear(1581));
-        assertTrue(!Calendar.isLeapYear(2900));
+        assertFalse(Calendar.isLeapYear(1581));
+        assertTrue(Calendar.isLeapYear(2020));
+        assertTrue(Calendar.isLeapYear(2000));
+        assertFalse(Calendar.isLeapYear(2100));
+        assertFalse(Calendar.isLeapYear(2900));
     }
 
     @Test
@@ -54,8 +55,9 @@ class CalendarTest {
 
     @Test
     void isValidDate() {
-        boolean isValidDate = Calendar.isValidDate(1, 29, 2005);
-        assertTrue(isValidDate);
+        assertTrue(Calendar.isValidDate(1, 29, 2005));
+        assertTrue(Calendar.isValidDate(11, 2, 2005));
+        assertTrue(Calendar.isValidDate(12, 29, 2005));
     }
 
     @Test
