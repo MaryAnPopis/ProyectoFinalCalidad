@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bc39bab-1387-4529-8e97-3723c3ccd313" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/test/ProyectoFinal/ac/cr/cenfotec/calidad/CalendarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProyectoFinal/ac/cr/cenfotec/calidad/CalendarTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="5bc39bab-1387-4529-8e97-3723c3ccd313" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,12 +9,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ProyectoFinalCalidad$CalendarTest.ic" NAME="CalendarTest Coverage Results" MODIFIED="1572201822050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/ProyectoFinalCalidad$CalendarTest.ic" NAME="CalendarTest Coverage Results" MODIFIED="1572207705802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ac.cr.cenfotec.calidad.*</FILTER>
     </SUITE>
   </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="241" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\dania\Desktop\Software\Cenfotec\Calidad y verificacion\Reporte de covertura" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -43,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="88" column="1" lean-forward="true" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
+            <state relative-caret-position="173">
+              <caret line="85" column="59" selection-start-line="85" selection-start-column="59" selection-end-line="85" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="34">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -95,12 +97,12 @@
         <option value="$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/JulianDay.java" />
         <option value="$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Main.java" />
         <option value="$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/MonthDays.java" />
-        <option value="$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java" />
         <option value="$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java" />
+        <option value="$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -164,7 +166,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570930884610" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Reporte de covertura" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -315,12 +317,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CalendarTest_isLeapYear - 2019.10.26 at 19h 35m 47s.xml">
-      <configuration name="CalendarTest.isLeapYear" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalendarTest - 2019.10.27 at 12h 44m 07s.xml">
-      <configuration name="CalendarTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CalendarTest_dayOfYear - 2019.10.27 at 12h 47m 27s.xml">
       <configuration name="CalendarTest.dayOfYear" configurationId="JUnit" />
     </history-entry>
@@ -345,15 +341,21 @@
     <history-entry file="CalendarTest - 2019.10.27 at 14h 04m 38s.xml">
       <configuration name="CalendarTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CalendarTest - 2019.10.27 at 14h 04m 59s.xml">
+      <configuration name="CalendarTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalendarTest - 2019.10.27 at 14h 22m 06s.xml">
+      <configuration name="CalendarTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="10572000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17838125" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302115" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -362,7 +364,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26025918" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39250815" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.26349893" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -373,7 +375,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="12" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32960597" />
+      <window_info active="true" anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.33383685" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -459,20 +461,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="88" column="1" lean-forward="true" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
+        <state relative-caret-position="173">
+          <caret line="85" column="59" selection-start-line="85" selection-start-column="59" selection-end-line="85" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
