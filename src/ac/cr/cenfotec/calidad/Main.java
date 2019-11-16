@@ -75,11 +75,32 @@ public class Main {
             String dateInput = br.readLine();
             int[] date = Calendar.getDateFromTuple(dateInput);
             if (!Calendar.isValidDate(date[1], date[2], date[0])) throw new Exception();
-            System.out.println("Día de la semana: " + getDayOfWeek(date[0], date[1], date[2]));
+            int dayOfTheWeek = getDayOfWeek(date[0], date[1], date[2]);
+            System.out.println("Día de la semana: " + parseDayOfWeek(dayOfTheWeek));
         } catch (Exception e) {
             System.out.println("La fecha ingresada no es valida");
         }
     }
 
+    static String parseDayOfWeek(int dayOfTheWeek) {
+        switch (dayOfTheWeek){
+            case 0:
+                return "0 - Domingo";
+            case 1:
+                return "1 - Lunes";
+            case 2:
+                return "2 - Martes";
+            case 3:
+                return "3 - Miércoles";
+            case 4:
+                return "4 - Jueves";
+            case 5:
+                return "5 - Viernes";
+            case 6:
+                return "6 - Sábado";
+            default:
+                return "";
+        }
+    }
 
 }

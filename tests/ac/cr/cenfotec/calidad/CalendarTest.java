@@ -21,25 +21,30 @@ class CalendarTest {
 
     @Test
     void dayOfYear() {
-        int day = Calendar.dayOfYear(1, 1);
-        assertEquals(1, day);
+        assertEquals(1, Calendar.dayOfYear(1, 1, 2019));
+        assertEquals(0, Calendar.dayOfYear(1, 32, 2016));
+        assertEquals(60, Calendar.dayOfYear(2, 29, 2020));
+        assertEquals(0, Calendar.dayOfYear(2, 29, 2021));
+        assertEquals(0, Calendar.dayOfYear(5, 0, 2011));
+        assertEquals(0, Calendar.dayOfYear(13, 12, 2010));
+        assertEquals(0, Calendar.dayOfYear(0, 12, 2010));
+        assertEquals(0, Calendar.dayOfYear(1, 12, 1581));
+        assertEquals(0, Calendar.dayOfYear(1, 12, 2900));
     }
 
     @Test
     void isLeapYear() {
-        boolean isLeapYear = Calendar.isLeapYear(2020);
-        assertTrue(isLeapYear);
+        assertFalse(Calendar.isLeapYear(1581));
+        assertTrue(Calendar.isLeapYear(2020));
+        assertTrue(Calendar.isLeapYear(2000));
+        assertFalse(Calendar.isLeapYear(2100));
+        assertFalse(Calendar.isLeapYear(2900));
     }
 
     @Test
     void isNotLeapYear() {
         boolean isLeapYear = Calendar.isLeapYear(2019);
         assertFalse(isLeapYear);
-    }
-
-
-    @Test
-    void daysInMonth() {
     }
 
     @Test
@@ -50,8 +55,9 @@ class CalendarTest {
 
     @Test
     void isValidDate() {
-        boolean isValidDate = Calendar.isValidDate(1, 29, 2005);
-        assertTrue(isValidDate);
+        assertTrue(Calendar.isValidDate(1, 29, 2005));
+        assertTrue(Calendar.isValidDate(11, 2, 2005));
+        assertTrue(Calendar.isValidDate(12, 29, 2005));
     }
 
     @Test
@@ -79,5 +85,7 @@ class CalendarTest {
         assertArrayEquals(new int[]{1, 2, 2019}, Calendar.nextDay(1, 1, 2019));
         assertArrayEquals(new int[]{2, 1, 2019}, Calendar.nextDay(1, 31, 2019));
         assertArrayEquals(new int[]{1, 1, 2020}, Calendar.nextDay(12, 31, 2019));
+        assertArrayEquals(new int[]{3, 1, 2019}, Calendar.nextDay(2, 28, 2019));
+        assertArrayEquals(new int[]{2, 29, 2020}, Calendar.nextDay(2, 28, 2020));
     }
 }

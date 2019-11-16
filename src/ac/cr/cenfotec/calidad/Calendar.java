@@ -14,13 +14,26 @@ public class Calendar {
     }
 
 
-    public static int dayOfYear(int month, int day) {
+    public static int dayOfYear(int month, int day, int year) {
+
         MonthDays[] monthDay = MonthDays.values();
+
+        if (day <= 0
+                || (month <= 0 || month > 12)
+                || (year < 1582 || year >= 2900)
+                || (isLeapYear(year) && month >= 2 ? monthDay[month-1].getMonthDays() + 1 : monthDay[month-1].getMonthDays()) < day) {
+            return 0;
+        }
         day  += monthDay[month-1].getDays();
         return day;
     }
 
     public static boolean isLeapYear(int year) {
+
+        if (year < 1582 || year >= 2900) {
+            return false;
+        }
+
         if (year % 4 != 0) {
             return false;
         } else if (year % 400 == 0) {
@@ -56,7 +69,7 @@ public class Calendar {
     }
 
     private static boolean isLastDayOfMonth(int month, int day, int year) {
-        return MonthDays.values()[month - 1].getDays() + daysInMonth(month, year) == dayOfYear(month, day);
+        return MonthDays.values()[month - 1].getDays() + daysInMonth(month, year) == dayOfYear(month, day, year);
     }
 
     static int[] getDateFromTuple(String dateTuple) throws Exception {

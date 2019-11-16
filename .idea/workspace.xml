@@ -1,35 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bc39bab-1387-4529-8e97-3723c3ccd313" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="5bc39bab-1387-4529-8e97-3723c3ccd313" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ProyectoFinalCalidad$CalendarTest.ic" NAME="CalendarTest Coverage Results" MODIFIED="1572207705802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ac.cr.cenfotec.calidad.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="241" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\dania\Desktop\Software\Cenfotec\Calidad y verificacion\Reporte de covertura" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java">
+        <entry file="file://$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+            <state relative-caret-position="179">
+              <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/MonthDays.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="71" column="45" lean-forward="true" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="85" column="59" selection-start-line="85" selection-start-column="59" selection-end-line="85" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,15 +58,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java">
+        <entry file="file://$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="78" column="76" lean-forward="true" selection-start-line="78" selection-start-column="76" selection-end-line="78" selection-end-column="76" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1646#1647#0" expanded="true" />
-                <element signature="e#1681#1682#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -65,6 +80,7 @@
     <findStrings>
       <find>dayOfYear</find>
       <find>dayOfMonth</find>
+      <find>dayOfY</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -79,17 +95,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/JulianDay.java" />
-        <option value="$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java" />
         <option value="$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Main.java" />
+        <option value="$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/MonthDays.java" />
         <option value="$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java" />
+        <option value="$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="126" />
-    <option name="width" value="1440" />
-    <option name="height" value="775" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectId" id="1Rsj2lI0gWv0kaPV1poQlyjaGrV" />
   <component name="ProjectView">
@@ -97,8 +114,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,10 +132,27 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="calidad" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ProyectoFinalCalidad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoFinalCalidad" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoFinalCalidad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoFinalCalidad" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="calidad" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoFinalCalidad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -134,7 +166,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570930884610" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Reporte de covertura" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -162,7 +194,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CalendarTest.nextDate">
+  <component name="RunManager" selected="JUnit.CalendarTest">
     <configuration name="CalendarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoFinal" />
       <extension name="coverage">
@@ -178,7 +210,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalendarTest.getDayOfWeek" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalendarTest.dayOfYear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoFinal" />
       <extension name="coverage">
         <pattern>
@@ -188,13 +220,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ac.cr.cenfotec.calidad" />
       <option name="MAIN_CLASS_NAME" value="ac.cr.cenfotec.calidad.CalendarTest" />
-      <option name="METHOD_NAME" value="getDayOfWeek" />
+      <option name="METHOD_NAME" value="dayOfYear" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalendarTest.getDayOfWeekInLeapYear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalendarTest.isLeapYear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoFinal" />
       <extension name="coverage">
         <pattern>
@@ -204,7 +236,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ac.cr.cenfotec.calidad" />
       <option name="MAIN_CLASS_NAME" value="ac.cr.cenfotec.calidad.CalendarTest" />
-      <option name="METHOD_NAME" value="getDayOfWeekInLeapYear" />
+      <option name="METHOD_NAME" value="isLeapYear" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -244,11 +276,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalendarTest" />
+        <item itemvalue="JUnit.CalendarTest.dayOfYear" />
+        <item itemvalue="JUnit.CalendarTest.isLeapYear" />
         <item itemvalue="JUnit.CalendarTest.nextDate" />
         <item itemvalue="JUnit.CalendarTest.nextDay" />
-        <item itemvalue="JUnit.CalendarTest.getDayOfWeekInLeapYear" />
-        <item itemvalue="JUnit.CalendarTest.getDayOfWeek" />
-        <item itemvalue="JUnit.CalendarTest" />
       </list>
     </recent_temporary>
   </component>
@@ -285,34 +317,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CalendarTest_nextDay - 2019.10.12 at 22h 00m 23s.xml">
-      <configuration name="CalendarTest.nextDay" configurationId="JUnit" />
+    <history-entry file="CalendarTest_dayOfYear - 2019.10.27 at 12h 47m 27s.xml">
+      <configuration name="CalendarTest.dayOfYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalendarTest_nextDay - 2019.10.12 at 22h 00m 26s.xml">
-      <configuration name="CalendarTest.nextDay" configurationId="JUnit" />
+    <history-entry file="CalendarTest_dayOfYear - 2019.10.27 at 12h 49m 14s.xml">
+      <configuration name="CalendarTest.dayOfYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalendarTest_nextDay - 2019.10.12 at 22h 00m 29s.xml">
-      <configuration name="CalendarTest.nextDay" configurationId="JUnit" />
+    <history-entry file="CalendarTest_dayOfYear - 2019.10.27 at 12h 49m 45s.xml">
+      <configuration name="CalendarTest.dayOfYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalendarTest_nextDay - 2019.10.12 at 22h 01m 46s.xml">
-      <configuration name="CalendarTest.nextDay" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalendarTest_nextDay - 2019.10.12 at 22h 02m 12s.xml">
-      <configuration name="CalendarTest.nextDay" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalendarTest_nextDay - 2019.10.12 at 22h 05m 21s.xml">
-      <configuration name="CalendarTest.nextDay" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalendarTest - 2019.10.13 at 00h 19m 32s.xml">
+    <history-entry file="CalendarTest - 2019.10.27 at 12h 49m 57s.xml">
       <configuration name="CalendarTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalendarTest - 2019.10.13 at 00h 30m 33s.xml">
+    <history-entry file="CalendarTest - 2019.10.27 at 12h 51m 42s.xml">
       <configuration name="CalendarTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalendarTest - 2019.10.13 at 00h 35m 56s.xml">
+    <history-entry file="CalendarTest - 2019.10.27 at 13h 57m 43s.xml">
       <configuration name="CalendarTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalendarTest - 2019.10.13 at 00h 36m 00s.xml">
+    <history-entry file="CalendarTest - 2019.10.27 at 14h 04m 19s.xml">
+      <configuration name="CalendarTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalendarTest - 2019.10.27 at 14h 04m 38s.xml">
+      <configuration name="CalendarTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalendarTest - 2019.10.27 at 14h 04m 59s.xml">
+      <configuration name="CalendarTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalendarTest - 2019.10.27 at 14h 22m 06s.xml">
       <configuration name="CalendarTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -320,10 +352,10 @@
     <option name="totallyTimeSpent" value="10572000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302115" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -331,9 +363,9 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26203966" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39250815" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.26349893" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -343,6 +375,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info active="true" anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.33383685" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -404,32 +437,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.2/junit-platform-commons-1.5.2.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+        <state relative-caret-position="406">
+          <caret line="368" column="6" lean-forward="true" selection-start-line="368" selection-start-column="6" selection-end-line="368" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="71" column="45" lean-forward="true" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+        <state relative-caret-position="179">
+          <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/MonthDays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="78" column="76" lean-forward="true" selection-start-line="78" selection-start-column="76" selection-end-line="78" selection-end-column="76" />
+        <state relative-caret-position="173">
+          <caret line="85" column="59" selection-start-line="85" selection-start-column="59" selection-end-line="85" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1646#1647#0" expanded="true" />
-            <element signature="e#1681#1682#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
