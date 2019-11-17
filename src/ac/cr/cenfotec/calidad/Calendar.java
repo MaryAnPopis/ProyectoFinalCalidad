@@ -90,4 +90,23 @@ public class Calendar {
         return Math.abs(dayOfYear(month1, day1, year1) - dayOfYear(month2, day2, year2));
     }
 
+    public static int[] futureDate(int[] initialDate, int nextDays, boolean isRecursion) {
+        if ((isValidDate(initialDate[0], initialDate[1], initialDate[2]) || isRecursion) && nextDays >= 0)  {
+            int daysInDatesMonth = daysInMonth(initialDate[0], initialDate[2]);
+            if (daysInDatesMonth <= nextDays + initialDate[1]) {
+                int[] newDateAux = initialDate[0] == 12 ? new int[] {1, 0, initialDate[2]+1} : new int[] {initialDate[0]+1, 0, initialDate[2]} ;
+
+                nextDays -= (daysInDatesMonth - initialDate[1]);
+                 return futureDate(newDateAux, nextDays, true);
+            } else {
+                initialDate[1] += nextDays;
+            }
+            return initialDate;
+        }
+        return null;
+    }
+
+    public static int[] futureDate(int[] initialDate, int nextDays) {
+        return futureDate(initialDate, nextDays, false);
+    }
 }

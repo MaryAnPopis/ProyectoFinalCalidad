@@ -94,4 +94,14 @@ class CalendarTest {
         assertEquals(1, Calendar.daysBetween(2019,11,16,2019, 11 ,17));
         assertEquals(2, Calendar.daysBetween(2019,11,18,2019, 11 ,16));
     }
+
+    @Test
+    void getFutureDate() {
+        int[] sameMonthDate = Calendar.futureDate(new int[] {2, 12, 2019}, 3);
+        int[] differentMonthDate = Calendar.futureDate(new int[] {5, 25, 2019}, 10);
+        int[] differentYearDate = Calendar.futureDate(new int[] {12, 20, 2019}, 20);
+        assertArrayEquals(new int[] {2, 15, 2019}, sameMonthDate);
+        assertArrayEquals(new int[] {6, 4, 2019}, differentMonthDate);
+        assertArrayEquals(new int[] {1, 9, 2020}, differentYearDate);
+    }
 }

@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bc39bab-1387-4529-8e97-3723c3ccd313" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/META-INF/ProyectoFinal.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/ac/cr/cenfotec/calidad/Calendar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProyectoFinal/ac/cr/cenfotec/calidad/Calendar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/ac/cr/cenfotec/calidad/Main.class.BASE.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/ac/cr/cenfotec/calidad/Main.class.LOCAL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/ac/cr/cenfotec/calidad/Main.class.REMOTE.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/ProyectoFinal/META-INF/ProyectoFinal.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/ProyectoFinal/ac/cr/cenfotec/calidad/CalendarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProyectoFinal/ac/cr/cenfotec/calidad/CalendarTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +15,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ProyectoFinalCalidad$CalendarTest_getDaysBetween.ic" NAME="CalendarTest.getDaysBetween Coverage Results" MODIFIED="1573953694825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ac.cr.cenfotec.calidad.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/ProyectoFinalCalidad$CalendarTest.ic" NAME="CalendarTest Coverage Results" MODIFIED="1572201822050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ac.cr.cenfotec.calidad.*</FILTER>
     </SUITE>
@@ -49,11 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="94" column="22" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
+            <state relative-caret-position="482">
+              <caret line="99" column="78" lean-forward="true" selection-start-line="99" selection-start-column="78" selection-end-line="99" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,11 +60,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="84" column="9" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
+            <state relative-caret-position="499">
+              <caret line="110" column="5" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
+              <folding>
+                <element signature="e#4094#4095#0" expanded="true" />
+                <element signature="e#4119#4120#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,10 +111,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="128" />
-    <option name="width" value="1440" />
-    <option name="height" value="773" />
+    <option name="x" value="479" />
+    <option name="y" value="-11" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectId" id="1Rsj2lI0gWv0kaPV1poQlyjaGrV" />
   <component name="ProjectView">
@@ -119,7 +122,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -131,18 +133,23 @@
             <path>
               <item name="ProyectoFinalCalidad" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProyectoFinalCalidad" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProyectoFinalCalidad" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProyectoFinalCalidad" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="calidad" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoFinalCalidad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -184,7 +191,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CalendarTest.getDaysBetween">
+  <component name="RunManager" selected="JUnit.CalendarTest">
     <configuration name="CalendarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoFinal" />
       <extension name="coverage">
@@ -266,8 +273,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CalendarTest.getDaysBetween" />
         <item itemvalue="JUnit.CalendarTest" />
+        <item itemvalue="JUnit.CalendarTest.getDaysBetween" />
         <item itemvalue="JUnit.CalendarTest.dayOfYear" />
         <item itemvalue="JUnit.CalendarTest.isLeapYear" />
         <item itemvalue="JUnit.CalendarTest.nextDate" />
@@ -319,45 +326,45 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CalendarTest - 2019.10.27 at 14h 04m 19s.xml">
+    <history-entry file="CalendarTest - 2019.11.16 at 21h 32m 41s.xml">
       <configuration name="CalendarTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalendarTest - 2019.10.27 at 14h 04m 38s.xml">
+    <history-entry file="CalendarTest - 2019.11.16 at 21h 35m 00s.xml">
       <configuration name="CalendarTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalendarTest - 2019.11.01 at 09h 04m 37s.xml">
+    <history-entry file="CalendarTest - 2019.11.16 at 21h 36m 07s.xml">
       <configuration name="CalendarTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalendarTest - 2019.11.01 at 09h 10m 11s.xml">
+    <history-entry file="CalendarTest - 2019.11.16 at 21h 36m 43s.xml">
       <configuration name="CalendarTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalendarTest - 2019.11.01 at 09h 30m 01s.xml">
+    <history-entry file="CalendarTest - 2019.11.16 at 21h 39m 29s.xml">
       <configuration name="CalendarTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalendarTest - 2019.11.01 at 09h 37m 20s.xml">
+    <history-entry file="CalendarTest - 2019.11.16 at 21h 42m 09s.xml">
       <configuration name="CalendarTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalendarTest - 2019.11.01 at 09h 38m 01s.xml">
+    <history-entry file="CalendarTest - 2019.11.16 at 21h 46m 50s.xml">
       <configuration name="CalendarTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalendarTest - 2019.11.01 at 09h 38m 38s.xml">
+    <history-entry file="CalendarTest - 2019.11.16 at 21h 49m 18s.xml">
       <configuration name="CalendarTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalendarTest - 2019.11.01 at 09h 39m 30s.xml">
+    <history-entry file="CalendarTest - 2019.11.16 at 21h 55m 38s.xml">
       <configuration name="CalendarTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalendarTest_getDaysBetween - 2019.11.16 at 18h 48m 23s.xml">
-      <configuration name="CalendarTest.getDaysBetween" configurationId="JUnit" />
+    <history-entry file="CalendarTest - 2019.11.16 at 21h 56m 32s.xml">
+      <configuration name="CalendarTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="17320000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18724832" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12992546" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -366,8 +373,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2592068" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.26349893" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17170626" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.26349893" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -386,7 +393,7 @@
       <window_info anchor="right" id="Maven" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3295302" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32930514" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
@@ -445,13 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.2/junit-platform-commons-1.5.2.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="368" column="6" lean-forward="true" selection-start-line="368" selection-start-column="6" selection-end-line="368" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/MonthDays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -466,20 +466,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.2/junit-platform-commons-1.5.2.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="94" column="22" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="321">
+          <caret line="363" selection-start-line="363" selection-end-line="363" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="84" column="9" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
+        <state relative-caret-position="499">
+          <caret line="110" column="5" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
+          <folding>
+            <element signature="e#4094#4095#0" expanded="true" />
+            <element signature="e#4119#4120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="99" column="78" lean-forward="true" selection-start-line="99" selection-start-column="78" selection-end-line="99" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
