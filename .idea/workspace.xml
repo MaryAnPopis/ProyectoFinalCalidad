@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bc39bab-1387-4529-8e97-3723c3ccd313" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ac/cr/cenfotec/calidad/CalendarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/META-INF/ProyectoFinal.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/ac/cr/cenfotec/calidad/Calendar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProyectoFinal/ac/cr/cenfotec/calidad/Calendar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/ac/cr/cenfotec/calidad/Main.class.BASE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/ac/cr/cenfotec/calidad/Main.class.LOCAL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/ac/cr/cenfotec/calidad/Main.class.REMOTE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/ProyectoFinal/META-INF/ProyectoFinal.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/ProyectoFinal/ac/cr/cenfotec/calidad/CalendarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProyectoFinal/ac/cr/cenfotec/calidad/CalendarTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+            <state relative-caret-position="220">
+              <caret line="84" column="9" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -286,7 +292,7 @@
       <workItem from="1572560051150" duration="661000" />
       <workItem from="1572618344780" duration="4734000" />
       <workItem from="1573951359975" duration="107000" />
-      <workItem from="1573951518081" duration="428000" />
+      <workItem from="1573951518081" duration="1233000" />
     </task>
     <task id="LOCAL-00001" summary="added next day of date and it's tests">
       <created>1570939561069</created>
@@ -302,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570948661944</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added daysBetween and corresponding test">
+      <created>1573952165540</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573952165540</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -338,7 +351,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16515000" />
+    <option name="totallyTimeSpent" value="17320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -404,7 +417,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added next day of date and it's tests" />
     <MESSAGE value="fixed some test and added next day function to main" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed some test and added next day function to main" />
+    <MESSAGE value="added daysBetween and corresponding test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added daysBetween and corresponding test" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoFinalCalidad$CalendarTest.ic" NAME="CalendarTest Coverage Results" MODIFIED="1572624284174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -464,8 +478,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ac/cr/cenfotec/calidad/Calendar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+        <state relative-caret-position="220">
+          <caret line="84" column="9" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
         </state>
       </provider>
     </entry>
