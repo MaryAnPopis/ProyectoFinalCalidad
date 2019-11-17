@@ -109,4 +109,29 @@ public class Calendar {
     public static int[] futureDate(int[] initialDate, int nextDays) {
         return futureDate(initialDate, nextDays, false);
     }
+
+    public static int[] passedDate(int[] initialDate, int days) {
+        if ((isValidDate(initialDate[0], initialDate[1], initialDate[2])) && days >= 0)  {
+            int daysInDatesMonth = daysInMonth(initialDate[0], initialDate[2]);
+            if (0 >= initialDate[1] - days) {
+                int[] newDateAux = initialDate[0] == 1 ? new int[] {12, 0, initialDate[2]-1} : new int[] {initialDate[0]-1, 0, initialDate[2]} ;
+
+                if(initialDate[0] == 1) {
+                    newDateAux = new int[] {12, 0, initialDate[2]-1};
+                    int diff = days - initialDate[1];
+                    newDateAux[1] = daysInDatesMonth - diff;
+                } else {
+                    days = (daysInDatesMonth - initialDate[1]);
+                    newDateAux[1] = days;
+                }
+
+                return newDateAux;
+            } else {
+                initialDate[1] -= days;
+            }
+            return initialDate;
+        }
+        return null;
+    }
+
 }

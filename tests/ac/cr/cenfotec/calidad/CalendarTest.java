@@ -104,4 +104,14 @@ class CalendarTest {
         assertArrayEquals(new int[] {6, 4, 2019}, differentMonthDate);
         assertArrayEquals(new int[] {1, 9, 2020}, differentYearDate);
     }
+
+    @Test
+    void getPassedDate() {
+        int[] sameMonthDate = Calendar.passedDate(new int[] {2, 12, 2019}, 3);
+        int[] differentMonthDate = Calendar.passedDate(new int[] {5, 3, 2019}, 10);
+        int[] differentYearDate = Calendar.passedDate(new int[] {1, 20, 2019}, 22);
+        assertArrayEquals(new int[] {2, 9, 2019}, sameMonthDate);
+        assertArrayEquals(new int[] {4, 28, 2019}, differentMonthDate);
+        assertArrayEquals(new int[] {12, 29, 2018}, differentYearDate);
+    }
 }
