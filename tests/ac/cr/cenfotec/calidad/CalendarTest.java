@@ -88,4 +88,10 @@ class CalendarTest {
         assertArrayEquals(new int[]{3, 1, 2019}, Calendar.nextDay(2, 28, 2019));
         assertArrayEquals(new int[]{2, 29, 2020}, Calendar.nextDay(2, 28, 2020));
     }
+
+    @Test
+    void getDaysBetween(){
+        assertEquals(1, Calendar.daysBetween(2019,11,16,2019, 11 ,17));
+        assertEquals(2, Calendar.daysBetween(2019,11,18,2019, 11 ,16));
+    }
 }
